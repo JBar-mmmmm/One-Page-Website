@@ -1,0 +1,113 @@
+body {
+    background-color: #111;
+    --pWrapper: 70%;
+}
+
+/* Typeography */
+h1 {
+    line-height: 1.1;
+    font-size: 5.5vw;
+    color: #DDD;
+    font-family: quicksand, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+h2 {
+    line-height: 1.5;
+    font-size: 2.5vw;
+    color: #DDD;
+    font-family: quicksand, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+p {
+    line-height: 1.5;
+    font-size: 2.5vw;
+    color: #DDD;
+    font-family: quicksand, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.ref {
+    font-size: 1.5vw;
+}
+
+
+/* Layout */
+    /* Section I - Title */
+h1 {
+    width: 80%;
+    margin: calc(50vh - (5.5vw * 1.1 * 3) / 2) auto; /* calc vertically centres h1 */
+    text-align: center;
+}
+h1 span::before {
+    content: "\a";
+    white-space: pre;
+}
+    /* Section II - Info */
+#intro p {
+    width: var(--pWrapper);
+    margin: 0 auto;
+    padding-top: 20vw;
+    padding-bottom: 20vw;
+}
+    /* Section III - Child main */
+#childrenMain {
+    width: var(--pWrapper);
+    margin: 0 auto;
+    padding-top: 20vw;
+    padding-bottom: 20vw;
+    display: flex;
+}
+#childrenMain p:nth-child(1) {
+    width: calc(100% / 5 * 3);
+}
+#childrenMain p:nth-child(2) {
+    width: calc(100% / 5 * 2);
+    font-size: 9vw;
+    text-align: center;
+}
+    /* Section IV - Child sub */
+#childrenSub {
+    width: var(--pWrapper);
+    margin: 0 auto;
+    padding-top: 20vw;
+    padding-bottom: 20vw;
+}
+#childrenSub p {
+    padding-bottom: 15vw;
+    padding-left: 1vw;
+}
+    /* Section V - Adult main */
+#adultMain {
+    width: var(--pWrapper);
+    margin: 0 auto;
+    padding-top: 20vw;
+    padding-bottom: 20vw;
+}
+    /* Section VI - Adult sub */ /* Same as IV */
+#adultSub {
+    width: var(--pWrapper);
+    margin: 0 auto;
+    padding-top: 20vw;
+    padding-bottom: 20vw;
+}
+#adultSub p {
+    padding-bottom: 15vw;
+    padding-left: 1vw;
+}
+    /* Section VII - Ref */
+#ref {
+    width: var(--pWrapper);
+    margin: 0 auto;
+    padding: 5vw 0;
+}
+#ref p {
+    line-height: 2.3;
+}
+a {
+    text-decoration: none;
+}
+a:hover p {
+    color: #999;
+}
